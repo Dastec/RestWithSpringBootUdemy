@@ -1,8 +1,18 @@
 package br.com.erudio.controller;
 
-public class OperationsMath {
+import java.io.Serializable;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class OperationsMath implements Serializable{
 	
-	public static Double sum(double numberOne, double numberTwo) {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public Double sum(double numberOne, double numberTwo) {
 		return numberOne + numberTwo;
 	}
 	
